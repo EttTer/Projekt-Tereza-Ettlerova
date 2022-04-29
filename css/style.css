@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/*official palletes
+$backround:#e7ecef;
+$light:#a3cef1;
+$gray: #8b8c89;
+$secundary:#6096ba;
+$primary:#274c77;*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #123d5c;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/*section {
+	padding: var(--spacer-double) var(--spacer-bigger);
+}*/
+/*header*/
+.header__contact {
+  background-color: #c0d3dd;
+  padding: 15px;
+}
+
+.header__contact-email {
+  text-decoration: none;
+  color: #123d5c;
+}
+
+.header__contact a:hover {
+  color: #b23444;
+}
+
+.header__contact .header__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.header__logo {
+  width: 40%;
+}
+
+.header__inner {
+  border: 1 solid #c0d3dd;
+  background-color: #c0d3dd;
+  display: inline-block;
+  padding: 15px;
+  position: absolute;
+  bottom: 56%;
+  margin-left: 40px;
+}
+
+/*.header__title, .header__subtitle {position: absolute;
+z-index: 1;
+;}
+
+.header__subtitle{top:15%}*//*# sourceMappingURL=style.css.map */

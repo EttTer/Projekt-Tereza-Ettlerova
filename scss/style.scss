@@ -1,0 +1,101 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+$primarylogocolor: #033d68;
+$secondarylogocolor: #bf1b2c;
+
+/*official palletes
+$backround:#e7ecef;
+$light:#a3cef1;
+$gray: #8b8c89;
+$secundary:#6096ba;
+$primary:#274c77;*/
+
+$white: #ffffffff;
+$lightblue: #c0d3ddff;
+$secondary: #597a90ff;
+$primary: #123d5cff;
+$contrast: #b23444ff;
+
+$font-defaut: "Open Sans", sans-serif;
+$font-special: "Montserrat", sans-serif;
+$space: 15px;
+
+body {
+  margin: 0;
+  font-family: $font-defaut;
+  background-color: $white;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: $font-special;
+  font-weight: bold;
+  color: $primary;
+}
+h3 {
+  font-family: $font-special;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/*section {
+	padding: var(--spacer-double) var(--spacer-bigger);
+}*/
+/*header*/
+.header__contact {background-color: $lightblue;
+padding: $space;}
+
+.header__contact-email{
+text-decoration: none; color: $primary}
+.header__contact a:hover {color: $contrast;}
+
+.header__contact
+
+.header__image{ background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+width: 100%;
+margin: 0;position: relative;
+}
+
+
+.header__logo {width: 40%;
+}
+
+.header__inner{border: 1 solid $lightblue;
+background-color: $lightblue;
+display: inline-block;
+padding: $space; 
+position: absolute;
+bottom: 56%;
+margin-left: 40px;}
+
+/*.header__title, .header__subtitle {position: absolute;
+z-index: 1;
+;}
+
+.header__subtitle{top:15%}*/
