@@ -45,6 +45,7 @@ h2 {
 h3 {
   font-family: $font-special;
   font-weight: normal;
+  color: $secondary;
   font-size: 25px;
 }
 
@@ -62,15 +63,13 @@ h2 {
 img {
   width: 100%;
 }
-/*.wrapp{max-width: 1000px;
-margin: 0 auto;}*/
 
-/*section {
-	padding: var(--spacer-double) var(--spacer-bigger);
-}*/
 /*header*/
-.header__contact {background-color: $white;
-padding-top: $space*2;}
+.header__contact {	padding: $space*2;
+	font-size: 14px;
+	text-align: center;
+	background-color: $lightblue;
+	color: $primary;;}
 
 .header__contact-email{
 text-decoration: none; color: $primary}
@@ -79,7 +78,7 @@ text-decoration: none; color: $primary}
 .header__inner{ max-width: 100%;
   min-height: 200px;
   }
-.max__width{max-width: 1000px;
+.max__width{max-width: 1100px;
 margin: 0 auto;}
 
 .header__logo {border: 2px solid $primary;
@@ -107,7 +106,7 @@ margin: 0 auto;}
 }
 
 .menu__item {
-	margin: 0;
+	margin-bottom: $space;
 	padding: 0;
   flex: 1 1 calc(100%/6) ;
 }
@@ -118,7 +117,7 @@ margin: 0 auto;}
 
 .menu__link {
 	display: block;
-	padding: $space $space;
+	padding: $space;
 	font-family: $font-special;
 	font-size: 12px;
 	font-weight: bold;
@@ -130,14 +129,30 @@ margin: 0 auto;}
 .menu__link:hover {
 	background-color: $secondary;
   color: $white;
+  padding: 20px;
   transform: scale(1.2);
 }
 
 /*firstsection*/
-.firstsection{background-color:  $white;}
+.firstsection{background-color:  $white;
+	padding: $space;
+	text-align: center;
+	background-color: $lightblue;
+	color: $primary;}
+
 .firstsection__title {color: $primary;
 margin-top: $doublespace;
 padding-left: $space;}
+
+.firstsection__title::after
+{ content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 5px;
+  background-color: $primary;
+  margin: 30px auto;
+}
 
 .firstsection__text{text-align: left; color: $primary;
   margin-top: $doublespace;
@@ -146,7 +161,7 @@ padding-left: $space;}
 
   /*secondsection*/
   .secondsection{display: grid;
-    gap: $space;
+    gap: $doublespace;
   grid-template-columns: 1fr 1fr;
   margin-top: $doublespace;
 }
@@ -156,7 +171,22 @@ min-height: 300px;
 margin-left: $space;}
 
 .secondsection__right {border: 5px solid $primary;
+  background-color: $lightblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: $font-special;
+  color: $primary;
+  padding-top: $space/2;
+  padding-bottom: $space ;
+
 min-height: 300px;}
+
+
+
+.secondsestion__right__text{font-size: 18px;
+text-align: left;
+padding: $space; 
+}
 
 /* footer*/
 
@@ -169,21 +199,21 @@ min-height: 300px;}
 	color: $contrast;
 }
 
-.footer__grid {
+/*.footer__grid {
 	padding: $doublespace;
-	background-color: $lightblue;
+	background-color: $white;
 	color: white;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: var(--spacer-bigger);
-}
+	gap: $space;
+}*/
 
 .footer__copyright {
-	padding: var(--spacer) var(--spacer-bigger);
+	padding: $space;
 	font-size: 14px;
 	text-align: center;
-	background-color: var(--grey-900);
-	color: var(--grey-500);
+	background-color: $lightblue;
+	color: $primary;
 }
 
 .footer__links {
@@ -193,9 +223,18 @@ min-height: 300px;}
 }
 
 .footer__links li:not(:last-child) {
-	margin-bottom: var(--spacer-quarter);
+	margin-bottom: $space/2;
+}
+.footer__kontakt {padding-left: $space;}
+.footer__tel, .footer__mail{
+	color:$primary;
 }
 
-.footer__title {
-	color: var(--grey-700);
+.footer__title::after
+{ content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 2px;
+  background-color: $secondary;
 }
