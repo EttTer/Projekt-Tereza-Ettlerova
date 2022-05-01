@@ -187,7 +187,7 @@ margin-top: $doublespace;
 
 .secondsection__left, .FirstsectionProjekty__left {border: 1px solid $primary;
 min-height: 300px;
-margin-left: $space;
+margin: 0 $space;
 background-image: url(/images/stetoskop.jpg);}
 
 .secondsection__right, .FirstsectionProjekty__right{border: 5px solid $primary;
@@ -198,16 +198,17 @@ background-image: url(/images/stetoskop.jpg);}
   color: $primary;
   padding-top: $space/2;
   padding-bottom: $space ;
-  margin-left: $space;
+  margin: 0 $space;
 
 min-height: 300px;}
 
-.secondsection__right__title, .FirstsectionProjekty__right__title {border: 2px solid $secondary;
-  background-color: $secondary;
-  color: $white;
+.secondsection__right__title, .FirstsectionProjekty__right__title /*.SecondsectionProjekty__title*/
+ {border: 2px solid $secondary;
+  background-color: rgba($lightblue,$background-opacity);
+  color: $primary;
   display: inline;
   font-size: 25px;
-  margin: 0;
+  margin: 0 $space;
   padding: $space;
 } 
 
@@ -264,34 +265,31 @@ padding: $space;
 { content: "";
   display: block;
   border: 1px solid $primary;
-  width: 100px;
+  width: 75px;
   height: 2px;
   background-color: $secondary;
 }
 
-/* PROJEKTY*/
-.firstsection{
+/*
+******************
+ PROJEKTY*/
+
+
+.SecondsectionProjekty{
 	padding: $space;
 	text-align: center;
 	background-color: $lightblue;
 	color: $primary;
   background-color: rgba($lightblue,$background-opacity);}
 
-.firstsection__title {color: $primary;
+.SecondsectionProjekty__title {color: $primary;
 margin-top: $doublespace;
-padding-left: $space;}
+padding-left: $space;
+text-align: left;}
 
-.firstsection__title::after
-{ content: "";
-  display: block;
-  border: 1px solid $primary;
-  width: 100px;
-  height: 5px;
-  background-color: $primary;
-  margin: 30px auto;
-}
 
-.firstsection__text{text-align: left; color: $primary;
+
+.SecondsectionProjekty__text, .ThirdsectionProjekty__title{text-align: left; color: $primary;
   margin-top: $doublespace;
 padding-left: $space;}
 
@@ -303,43 +301,66 @@ padding-left: $space;}
 grid-template-columns: 1fr 1fr;
 margin: $doublespace 0;
 }
+.FirstsectionProjekty__left {margin-bottom: 0;}
 }
 
 
-/*.secondsection{display: grid;
-  gap: $doublespace;
-grid-template-columns: 1fr;
-margin-top: $doublespace;
-}
 
-.secondsection__left {border: 1px solid $primary;
-min-height: 300px;
-margin-left: $space;
-background-image: url(/images/stetoskop.jpg);}
+.ThirdsectionProjekty {margin-bottom: $doublespace; padding: $space;
+text-align: center;}
 
-.secondsection__right {border: 5px solid $primary;
-  background-color: $lightblue;
-  text-align: center;
-  font-size: 25px;
+
+.ThirdsectionProjekty__picture{border: 1px solid $primary;
+  min-height: 300px;
+  margin: 0 $space ;
+ ;}
+ 
+.SecondsectionProjekty__text__list__item{text-align: left;}
+
+.ThirdsectionProjekty__text__list__item{text-align: left;}
+ .ThirdsectionProjekty__title::after
+{ content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 2px;
+  background-color: $secondary;}
+
+
+  .SecondsectionProjekty__title::after
+{ content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 2px;
+  background-color: $secondary;}
+
+
+  /*
+ **************************************
+	Tlačítko
+ **************************************
+*/
+button{
+ padding: $space;
+ background-color: $secondary;
+	font-size: 18px;
   font-family: $font-special;
-  color: $primary;
-  padding-top: $space/2;
-  padding-bottom: $space ;
-  margin-left: $space;
+	border: 1px solid $secondary;
+  color: $white ;
+	cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+ }
 
-min-height: 300px;}
 
-.secondsection__right__title {border: 2px solid $secondary;
-  background-color: $secondary;
-  color: $white;
-  display: inline;
-  font-size: 25px;
-  margin: 0;
-  padding: $space;
-} 
-
-.secondsestion__right__text{
-  font-size: 18px;
-text-align: left;
-padding: $space; 
-}*/
+ /**************
+ GRID button*/
+ @media screen and (min-width: 950px){
+  .SecondsectionProjekty__grid, .ThirdsectionProjekty__grid{display: grid;
+  gap: $doublespace;
+grid-template-columns: 1fr 1fr;
+margin: $doublespace 0;
+align-items: center;
+}
+ }

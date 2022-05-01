@@ -187,7 +187,7 @@ img {
 .secondsection__left, .FirstsectionProjekty__left {
   border: 1px solid #123d5c;
   min-height: 300px;
-  margin-left: 15px;
+  margin: 0 15px;
   background-image: url(/images/stetoskop.jpg);
 }
 
@@ -200,17 +200,17 @@ img {
   color: #123d5c;
   padding-top: 7.5px;
   padding-bottom: 15px;
-  margin-left: 15px;
+  margin: 0 15px;
   min-height: 300px;
 }
 
 .secondsection__right__title, .FirstsectionProjekty__right__title {
   border: 2px solid #597a90;
-  background-color: #597a90;
-  color: white;
+  background-color: rgba(192, 211, 221, 0.5);
+  color: #123d5c;
   display: inline;
   font-size: 25px;
-  margin: 0;
+  margin: 0 15px;
   padding: 15px;
 }
 
@@ -269,13 +269,15 @@ img {
   content: "";
   display: block;
   border: 1px solid #123d5c;
-  width: 100px;
+  width: 75px;
   height: 2px;
   background-color: #597a90;
 }
 
-/* PROJEKTY*/
-.firstsection {
+/*
+******************
+ PROJEKTY*/
+.SecondsectionProjekty {
   padding: 15px;
   text-align: center;
   background-color: #c0d3dd;
@@ -283,23 +285,14 @@ img {
   background-color: rgba(192, 211, 221, 0.5);
 }
 
-.firstsection__title {
+.SecondsectionProjekty__title {
   color: #123d5c;
   margin-top: 30px;
   padding-left: 15px;
+  text-align: left;
 }
 
-.firstsection__title::after {
-  content: "";
-  display: block;
-  border: 1px solid #123d5c;
-  width: 100px;
-  height: 5px;
-  background-color: #123d5c;
-  margin: 30px auto;
-}
-
-.firstsection__text {
+.SecondsectionProjekty__text, .ThirdsectionProjekty__title {
   text-align: left;
   color: #123d5c;
   margin-top: 30px;
@@ -317,41 +310,74 @@ img {
     grid-template-columns: 1fr 1fr;
     margin: 30px 0;
   }
-}
-/*.secondsection{display: grid;
-  gap: $doublespace;
-grid-template-columns: 1fr;
-margin-top: $doublespace;
-}
 
-.secondsection__left {border: 1px solid $primary;
-min-height: 300px;
-margin-left: $space;
-background-image: url(/images/stetoskop.jpg);}
-
-.secondsection__right {border: 5px solid $primary;
-  background-color: $lightblue;
+  .FirstsectionProjekty__left {
+    margin-bottom: 0;
+  }
+}
+.ThirdsectionProjekty {
+  margin-bottom: 30px;
+  padding: 15px;
   text-align: center;
-  font-size: 25px;
-  font-family: $font-special;
-  color: $primary;
-  padding-top: $space/2;
-  padding-bottom: $space ;
-  margin-left: $space;
+}
 
-min-height: 300px;}
+.ThirdsectionProjekty__picture {
+  border: 1px solid #123d5c;
+  min-height: 300px;
+  margin: 0 15px;
+}
 
-.secondsection__right__title {border: 2px solid $secondary;
-  background-color: $secondary;
-  color: $white;
-  display: inline;
-  font-size: 25px;
-  margin: 0;
-  padding: $space;
-} 
+.SecondsectionProjekty__text__list__item {
+  text-align: left;
+}
 
-.secondsestion__right__text{
+.ThirdsectionProjekty__text__list__item {
+  text-align: left;
+}
+
+.ThirdsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 2px;
+  background-color: #597a90;
+}
+
+.SecondsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 2px;
+  background-color: #597a90;
+}
+
+/*
+ **************************************
+	Tlačítko
+ **************************************
+*/
+button {
+  padding: 15px;
+  background-color: #597a90;
   font-size: 18px;
-text-align: left;
-padding: $space; 
-}*//*# sourceMappingURL=style.css.map */
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #597a90;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+/**************
+GRID button*/
+@media screen and (min-width: 950px) {
+  .SecondsectionProjekty__grid, .ThirdsectionProjekty__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
