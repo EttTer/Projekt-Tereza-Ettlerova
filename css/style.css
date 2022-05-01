@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: white;
   font-size: 18px;
+  color: #123d5c;
 }
 
 h1,
@@ -47,7 +48,7 @@ img {
   width: 100%;
 }
 
-/*header*/
+/******************header*************************/
 .header__contact {
   padding: 30px;
   font-size: 14px;
@@ -98,12 +99,12 @@ img {
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
-.header__title, .header__subtitle {
+.header__title,
+.header__subtitle {
   padding-left: 15px;
 }
 
-/*menu
-*/
+/******************************menu***********************/
 .menu__list {
   list-style: none;
   margin: 0;
@@ -139,8 +140,9 @@ img {
   transform: scale(1.2);
 }
 
-/*firstsection*/
-.firstsection {
+/************************firstsection*/
+.firstsection,
+.FirstSectionOnas {
   padding: 15px;
   text-align: center;
   background-color: #c0d3dd;
@@ -177,21 +179,24 @@ img {
   grid-template-columns: 1fr 1fr;
   margin-top: $doublespace;
 }*/
-.secondsection, .FirstsectionProjekty {
+.secondsection,
+.FirstsectionProjekty {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   margin-top: 30px;
 }
 
-.secondsection__left, .FirstsectionProjekty__left {
+.secondsection__left,
+.FirstsectionProjekty__left {
   border: 1px solid #123d5c;
   min-height: 300px;
   margin: 0 15px;
   background-image: url(/images/stetoskop.jpg);
 }
 
-.secondsection__right, .FirstsectionProjekty__right {
+.secondsection__right,
+.FirstsectionProjekty__right {
   border: 5px solid #123d5c;
   background-color: #c0d3dd;
   text-align: center;
@@ -214,7 +219,8 @@ img {
   padding: 15px;
 }
 
-.secondsestion__right__text, .FirstsectionProjekty__right__text {
+.secondsestion__right__text,
+.FirstsectionProjekty__right__text {
   font-size: 18px;
   text-align: left;
   padding: 15px;
@@ -261,7 +267,8 @@ img {
   padding-left: 15px;
 }
 
-.footer__tel, .footer__mail {
+.footer__tel,
+.footer__mail {
   color: #123d5c;
 }
 
@@ -292,7 +299,8 @@ img {
   text-align: left;
 }
 
-.SecondsectionProjekty__text, .ThirdsectionProjekty__title {
+.SecondsectionProjekty__text,
+.ThirdsectionProjekty__title, .FirstSectionOnas {
   text-align: left;
   color: #123d5c;
   margin-top: 30px;
@@ -304,7 +312,8 @@ img {
 }
 
 @media screen and (min-width: 950px) {
-  .secondsection, .FirstsectionProjekty {
+  .secondsection,
+.FirstsectionProjekty {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
@@ -371,13 +380,57 @@ button {
 }
 
 /**************
-GRID button*/
+ GRID button*/
 @media screen and (min-width: 950px) {
-  .SecondsectionProjekty__grid, .ThirdsectionProjekty__grid {
+  .SecondsectionProjekty__grid,
+.ThirdsectionProjekty__grid {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
     margin: 30px 0;
     align-items: center;
+  }
+}
+/************ O NAS******************/
+.FirstSectionOnas__title {
+  color: #123d5c;
+  text-align: center;
+}
+
+.FirstSectionOnas__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+/*****************vizitka********************/
+.SecondSectionOnas__portfolio__item {
+  border: 2px solid #597a90;
+  background-color: #c0d3dd;
+  border-radius: 3px;
+  width: 75%;
+  min-height: 300px;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 15px;
+}
+
+.SecondSectionOnas__portfolio__photo {
+  border: 5px solid white;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .SecondSectionOnas__portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
