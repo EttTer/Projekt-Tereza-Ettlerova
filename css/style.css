@@ -10,12 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*official palletes
-$backround:#e7ecef;
-$light:#a3cef1;
-$gray: #8b8c89;
-$secundary:#6096ba;
-$primary:#274c77;*/
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -59,6 +53,7 @@ img {
   font-size: 14px;
   text-align: center;
   background-color: #c0d3dd;
+  background-color: rgba(192, 211, 221, 0.5);
   color: #123d5c;
 }
 
@@ -81,17 +76,25 @@ img {
   margin: 0 auto;
 }
 
-.header__logo {
-  border: 2px solid #123d5c;
+/*.header__logo {border: 2px solid $primary; TOHLE JE LOGO V ROHU
   border-radius: 150px;
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+
   margin: 0;
   position: absolute;
-  top: 2%;
+  top:2%;
   right: 2%;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);}*/
+.header__logo {
+  border: 2px solid #123d5c 0.8;
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  position: absolute;
+  top: 1.875px;
+  right: 7.5px;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
@@ -138,11 +141,11 @@ img {
 
 /*firstsection*/
 .firstsection {
-  background-color: white;
   padding: 15px;
   text-align: center;
   background-color: #c0d3dd;
   color: #123d5c;
+  background-color: rgba(192, 211, 221, 0.5);
 }
 
 .firstsection__title {
@@ -169,20 +172,26 @@ img {
 }
 
 /*secondsection*/
-.secondsection {
-  display: grid;
-  gap: 30px;
+/* .secondsection{display: grid;     TOHLE BUDE PRO TABLET!!!!!
+    gap: $doublespace;
   grid-template-columns: 1fr 1fr;
+  margin-top: $doublespace;
+}*/
+.secondsection, .FirstsectionProjekty {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
   margin-top: 30px;
 }
 
-.secondsection__left {
-  border: 5px solid #123d5c;
+.secondsection__left, .FirstsectionProjekty__left {
+  border: 1px solid #123d5c;
   min-height: 300px;
   margin-left: 15px;
+  background-image: url(/images/stetoskop.jpg);
 }
 
-.secondsection__right {
+.secondsection__right, .FirstsectionProjekty__right {
   border: 5px solid #123d5c;
   background-color: #c0d3dd;
   text-align: center;
@@ -191,10 +200,21 @@ img {
   color: #123d5c;
   padding-top: 7.5px;
   padding-bottom: 15px;
+  margin-left: 15px;
   min-height: 300px;
 }
 
-.secondsestion__right__text {
+.secondsection__right__title, .FirstsectionProjekty__right__title {
+  border: 2px solid #597a90;
+  background-color: #597a90;
+  color: white;
+  display: inline;
+  font-size: 25px;
+  margin: 0;
+  padding: 15px;
+}
+
+.secondsestion__right__text, .FirstsectionProjekty__right__text {
   font-size: 18px;
   text-align: left;
   padding: 15px;
@@ -224,6 +244,7 @@ img {
   text-align: center;
   background-color: #c0d3dd;
   color: #123d5c;
+  background-color: rgba(192, 211, 221, 0.5);
 }
 
 .footer__links {
@@ -251,4 +272,86 @@ img {
   width: 100px;
   height: 2px;
   background-color: #597a90;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* PROJEKTY*/
+.firstsection {
+  padding: 15px;
+  text-align: center;
+  background-color: #c0d3dd;
+  color: #123d5c;
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+.firstsection__title {
+  color: #123d5c;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.firstsection__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+.firstsection__text {
+  text-align: left;
+  color: #123d5c;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.FirstsectionProjekty__left {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 950px) {
+  .secondsection, .FirstsectionProjekty {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+  }
+}
+/*.secondsection{display: grid;
+  gap: $doublespace;
+grid-template-columns: 1fr;
+margin-top: $doublespace;
+}
+
+.secondsection__left {border: 1px solid $primary;
+min-height: 300px;
+margin-left: $space;
+background-image: url(/images/stetoskop.jpg);}
+
+.secondsection__right {border: 5px solid $primary;
+  background-color: $lightblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: $font-special;
+  color: $primary;
+  padding-top: $space/2;
+  padding-bottom: $space ;
+  margin-left: $space;
+
+min-height: 300px;}
+
+.secondsection__right__title {border: 2px solid $secondary;
+  background-color: $secondary;
+  color: $white;
+  display: inline;
+  font-size: 25px;
+  margin: 0;
+  padding: $space;
+} 
+
+.secondsestion__right__text{
+  font-size: 18px;
+text-align: left;
+padding: $space; 
+}*//*# sourceMappingURL=style.css.map */
