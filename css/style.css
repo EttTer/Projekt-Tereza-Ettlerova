@@ -190,10 +190,21 @@ img {
 
 .secondsection__left,
 .FirstsectionProjekty__left {
-  border: 1px solid #123d5c;
+  border: 1px solid white;
   min-height: 300px;
   margin: 0 15px;
-  background-image: url(/images/stetoskop.jpg);
+}
+
+.secondsection__left img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.FirstsectionProjekty__left img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .secondsection__right,
@@ -205,7 +216,6 @@ img {
   font-family: "Montserrat", sans-serif;
   color: #123d5c;
   padding-top: 7.5px;
-  padding-bottom: 15px;
   margin: 0 15px;
   min-height: 300px;
 }
@@ -225,6 +235,7 @@ img {
   font-size: 18px;
   text-align: left;
   padding: 15px;
+  padding-bottom: 0;
 }
 
 /* footer*/
@@ -332,9 +343,16 @@ img {
 }
 
 .ThirdsectionProjekty__picture {
-  border: 1px solid #123d5c;
-  min-height: 300px;
-  margin: 0 15px;
+  border: 1px solid white;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.ThirdsectionProjekty__picture img {
+  width: 100%;
+  max-height: 325px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .SecondsectionProjekty__text__list__item {

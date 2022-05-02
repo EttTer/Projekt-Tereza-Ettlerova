@@ -206,11 +206,16 @@ img {
 
 .secondsection__left,
 .FirstsectionProjekty__left {
-  border: 1px solid $primary;
+  border: 1px solid $white;
   min-height: 300px;
   margin: 0 $space;
-  background-image: url(/images/stetoskop.jpg);
 }
+.secondsection__left img {height:100%;
+object-fit: cover;}
+
+.FirstsectionProjekty__left img {height: 100%;
+object-fit: cover;}
+
 
 .secondsection__right,
 .FirstsectionProjekty__right {
@@ -221,13 +226,13 @@ img {
   font-family: $font-special;
   color: $primary;
   padding-top: $space/2;
-  padding-bottom: $space;
+ ;
   margin: 0 $space;
 
   min-height: 300px;
 }
 
-.secondsection__right__title, .FirstsectionProjekty__right__title /*.SecondsectionProjekty__title*/ {
+.secondsection__right__title, .FirstsectionProjekty__right__title {
   border: 2px solid $secondary;
   background-color: rgba($lightblue, $background-opacity);
   color: $primary;
@@ -242,6 +247,7 @@ img {
   font-size: 18px;
   text-align: left;
   padding: $space;
+  padding-bottom: 0;
 }
 
 /* footer*/
@@ -350,11 +356,13 @@ img {
 }
 
 .ThirdsectionProjekty__picture {
-  border: 1px solid $primary;
-  min-height: 300px;
-  margin: 0 $space;
-  
-}
+  border: 1px solid white;
+  margin: $doublespace 0 0 0;
+  width: 100%;
+  }
+.ThirdsectionProjekty__picture img {width: 100%;
+max-height: 325px;
+object-fit: cover;}
 
 .SecondsectionProjekty__text__list__item {
   text-align: left;
@@ -555,5 +563,4 @@ padding-bottom: $space ;}
     .ThirdsectionKontakty__form__grid {padding: $doublespace*3 $doublespace;
    ;}
     }
-
-    
+  
