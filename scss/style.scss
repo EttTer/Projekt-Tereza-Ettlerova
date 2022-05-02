@@ -353,6 +353,7 @@ img {
   border: 1px solid $primary;
   min-height: 300px;
   margin: 0 $space;
+  
 }
 
 .SecondsectionProjekty__text__list__item {
@@ -455,7 +456,7 @@ padding-bottom: $space ;}
 }
 
   /*******************Kontakt*********************/
-
+  .FirstSectionKontakty__title{color: $primary;}
 
   .FirstSectionKontakty__icon, .SecondtSectionKontakty__icon{
     width: 90px;
@@ -477,6 +478,7 @@ padding-bottom: $space ;}
   
   .FirstSectionKontakty__description {
     padding-top: $space ;
+    font-family: $font-special;
     display: block;
     color: $primary;
     font-size: 20px;
@@ -508,5 +510,50 @@ padding-bottom: $space ;}
       }
       .SecondSectionKontakty__grid{display: grid;
       grid-template-columns: repeat(4, 1fr);}
+
+      .FirstSectionKontakty {display: grid;
+        grid-template-columns: 1fr 1fr;}
     }
     .SecondSectionKontakty__item {padding-bottom: $space;}
+
+    /*********formular********/
+
+    .ThirdsectionKontakty__form{min-width: 150px;
+    min-height: 200px;}
+
+    .form-field {
+      margin-bottom: $space;
+    }
+    
+    .form-field label {
+      display: block;
+      color: $primary;
+      font-family: $font-special;
+      font-size: 15px;
+      margin-bottom: $space/2;
+    }
+    
+    .form-field :is(input, textarea, select) {
+      width: 50%;
+      padding: $space/2;
+      border: 1px solid $primary;
+      border-radius: 2px;
+    }
+    
+    .required:after {
+      content: "*";
+      color: $contrast;
+      margin-left: 4px;
+    }
+    .ThirdsectionKontakty__form__title{font-family: $font-special;}
+    .FirstSectionKontakty {display: grid;
+    grid-template-columns: 1fr;}
+
+    @media screen and (min-width:800px){ 
+    .FirstSectionKontakty {display: grid;
+      grid-template-columns: 1fr 1fr;}
+    .ThirdsectionKontakty__form__grid {padding: $doublespace*3 $doublespace;
+   ;}
+    }
+
+    
