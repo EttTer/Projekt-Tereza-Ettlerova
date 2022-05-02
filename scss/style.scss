@@ -157,7 +157,8 @@ img {
 
 /************************firstsection*/
 .firstsection,
-.FirstSectionOnas{
+.FirstSectionOnas,
+.FirstSectionKontakty{
   padding: $space;
   text-align: center;
   background-color: $lightblue;
@@ -165,7 +166,7 @@ img {
   background-color: rgba($lightblue, $background-opacity);
 }
 
-.firstsection__title {
+.firstsection__title,.SecondSectionKontakty__title {
   color: $primary;
   margin-top: $doublespace;
   padding-left: $space;
@@ -453,4 +454,59 @@ padding-bottom: $space ;}
   
 }
 
+  /*******************Kontakt*********************/
+
+
+  .FirstSectionKontakty__icon, .SecondtSectionKontakty__icon{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+  .FirstSectionKontakty__icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  
+  .FirstSectionKontakty__description {
+    padding-top: $space ;
+    display: block;
+    color: $primary;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .FirstSectionKontakty__description a {text-decoration: none;
+      color: $primary;}
+
+    .FirstSectionKontakty__description a:hover,
+    .FirstSectionKontakty__description a:focus {
+      color: $contrast;
+    }
+
+    .FirstSectionKontakty__title::after {
+      content: "";
+      display: block;
+      border: 1px solid $primary;
+      width: 100px;
+      height: 5px;
+      background-color: $primary;
+      margin: 30px auto;
+    }
+
+    @media screen and (min-width:650px){
+      .FirstSectionKontakty__grid{display: grid;
+      grid-template-columns:  1fr 1fr ;
+      }
+      .SecondSectionKontakty__grid{display: grid;
+      grid-template-columns: repeat(4, 1fr);}
+    }
+    .SecondSectionKontakty__item {padding-bottom: $space;}
