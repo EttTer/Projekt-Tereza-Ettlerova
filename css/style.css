@@ -151,7 +151,8 @@ img {
   background-color: rgba(192, 211, 221, 0.5);
 }
 
-.firstsection__title, .SecondSectionKontakty__title {
+.firstsection__title,
+.SecondSectionKontakty__title {
   color: #123d5c;
   margin-top: 30px;
   padding-left: 15px;
@@ -220,7 +221,8 @@ img {
   min-height: 300px;
 }
 
-.secondsection__right__title, .FirstsectionProjekty__right__title {
+.secondsection__right__title,
+.FirstsectionProjekty__right__title {
   border: 2px solid #597a90;
   background-color: rgba(192, 211, 221, 0.5);
   color: #123d5c;
@@ -312,7 +314,8 @@ img {
 }
 
 .SecondsectionProjekty__text,
-.ThirdsectionProjekty__title, .FirstSectionOnas {
+.ThirdsectionProjekty__title,
+.FirstSectionOnas {
   text-align: left;
   color: #123d5c;
   margin-top: 30px;
@@ -458,7 +461,8 @@ button {
   color: #123d5c;
 }
 
-.FirstSectionKontakty__icon, .SecondtSectionKontakty__icon {
+.FirstSectionKontakty__icon,
+.SecondtSectionKontakty__icon {
   width: 90px;
   height: 90px;
   margin: 0 auto;
@@ -575,4 +579,63 @@ button {
   .ThirdsectionKontakty__form__grid {
     padding: 90px 30px;
   }
+}
+/**************************Partneri*************************/
+.FirstsectionPartneri .FirstsectionPartneri__right__title {
+  color: #123d5c;
+  padding-left: 15px;
+}
+
+.FirstsectionPartneri__item {
+  width: 200px;
+  height: 250px;
+  border: 3px solid #123d5c;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.FirstsectionPartneri__icon {
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px solid #123d5c;
+  justify-items: center;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.FirstSectionPartneri__icon .img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.FirstsectionPartneri__description {
+  text-align: center;
+}
+
+.FirstsectionPartneri {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.FirstsectionPartneri__right {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 700px) {
+  .FirstsectionPartneri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionPartneri__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.FirstsectionPartneri__left {
+  padding-left: 15px;
 }/*# sourceMappingURL=style.css.map */

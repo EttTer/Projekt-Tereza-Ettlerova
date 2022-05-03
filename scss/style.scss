@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -20,8 +21,10 @@ $secondary: #597a90ff;
 $primary: #123d5cff;
 $contrast: #b23444ff;
 
-$font-defaut: "Open Sans", sans-serif;
-$font-special: "Montserrat", sans-serif;
+$font-defaut: "Open Sans",
+sans-serif;
+$font-special: "Montserrat",
+sans-serif;
 $space: 15px;
 $doublespace: 30px;
 
@@ -39,6 +42,7 @@ h2 {
   font-weight: bold;
   color: $primary;
 }
+
 h3 {
   font-family: $font-special;
   font-weight: normal;
@@ -49,6 +53,7 @@ h3 {
 h1 {
   font-size: 42px;
 }
+
 h2 {
   font-size: 32px;
 }
@@ -75,6 +80,7 @@ img {
   text-decoration: none;
   color: $primary;
 }
+
 .header__contact a:hover {
   color: $contrast;
 }
@@ -83,6 +89,7 @@ img {
   max-width: 100%;
   min-height: 200px;
 }
+
 .max__width {
   max-width: 1100px;
   margin: 0 auto;
@@ -158,7 +165,7 @@ img {
 /************************firstsection*/
 .firstsection,
 .FirstSectionOnas,
-.FirstSectionKontakty{
+.FirstSectionKontakty {
   padding: $space;
   text-align: center;
   background-color: $lightblue;
@@ -166,7 +173,8 @@ img {
   background-color: rgba($lightblue, $background-opacity);
 }
 
-.firstsection__title,.SecondSectionKontakty__title {
+.firstsection__title,
+.SecondSectionKontakty__title {
   color: $primary;
   margin-top: $doublespace;
   padding-left: $space;
@@ -210,11 +218,16 @@ img {
   min-height: 300px;
   margin: 0 $space;
 }
-.secondsection__left img {height:100%;
-object-fit: cover;}
 
-.FirstsectionProjekty__left img {height: 100%;
-object-fit: cover;}
+.secondsection__left img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.FirstsectionProjekty__left img {
+  height: 100%;
+  object-fit: cover;
+}
 
 
 .secondsection__right,
@@ -226,13 +239,14 @@ object-fit: cover;}
   font-family: $font-special;
   color: $primary;
   padding-top: $space/2;
- ;
+  ;
   margin: 0 $space;
 
   min-height: 300px;
 }
 
-.secondsection__right__title, .FirstsectionProjekty__right__title {
+.secondsection__right__title,
+.FirstsectionProjekty__right__title {
   border: 2px solid $secondary;
   background-color: rgba($lightblue, $background-opacity);
   color: $primary;
@@ -288,9 +302,11 @@ object-fit: cover;}
 .footer__links li:not(:last-child) {
   margin-bottom: $space/2;
 }
+
 .footer__kontakt {
   padding-left: $space;
 }
+
 .footer__tel,
 .footer__mail {
   color: $primary;
@@ -325,7 +341,8 @@ object-fit: cover;}
 }
 
 .SecondsectionProjekty__text,
-.ThirdsectionProjekty__title, .FirstSectionOnas {
+.ThirdsectionProjekty__title,
+.FirstSectionOnas {
   text-align: left;
   color: $primary;
   margin-top: $doublespace;
@@ -337,6 +354,7 @@ object-fit: cover;}
 }
 
 @media screen and (min-width: 950px) {
+
   .secondsection,
   .FirstsectionProjekty {
     display: grid;
@@ -344,6 +362,7 @@ object-fit: cover;}
     grid-template-columns: 1fr 1fr;
     margin: $doublespace 0;
   }
+
   .FirstsectionProjekty__left {
     margin-bottom: 0;
   }
@@ -359,10 +378,13 @@ object-fit: cover;}
   border: 1px solid white;
   margin: $doublespace 0 0 0;
   width: 100%;
-  }
-.ThirdsectionProjekty__picture img {width: 100%;
-max-height: 325px;
-object-fit: cover;}
+}
+
+.ThirdsectionProjekty__picture img {
+  width: 100%;
+  max-height: 325px;
+  object-fit: cover;
+}
 
 .SecondsectionProjekty__text__list__item {
   text-align: left;
@@ -371,6 +393,7 @@ object-fit: cover;}
 .ThirdsectionProjekty__text__list__item {
   text-align: left;
 }
+
 .ThirdsectionProjekty__title::after {
   content: "";
   display: block;
@@ -409,6 +432,7 @@ button {
 /**************
  GRID button*/
 @media screen and (min-width: 950px) {
+
   .SecondsectionProjekty__grid,
   .ThirdsectionProjekty__grid {
     display: grid;
@@ -418,9 +442,11 @@ button {
     align-items: center;
   }
 }
+
 /************ O NAS******************/
 
-.FirstSectionOnas__title{color: $primary;
+.FirstSectionOnas__title {
+  color: $primary;
   text-align: center;
 }
 
@@ -445,10 +471,11 @@ button {
   width: 75%;
   min-height: 300px;
   text-align: center;
-margin: $doublespace auto;
-padding-bottom: $space ;}
-  
-  .SecondSectionOnas__portfolio__photo {
+  margin: $doublespace auto;
+  padding-bottom: $space;
+}
+
+.SecondSectionOnas__portfolio__photo {
   border: 5px solid white;
   width: 100%;
   height: 300px;
@@ -456,111 +483,191 @@ padding-bottom: $space ;}
   border-radius: 5px;
 }
 
-@media screen and (min-width:800px){
-  .SecondSectionOnas__portfolio{display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
+@media screen and (min-width:800px) {
+  .SecondSectionOnas__portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
 }
 
-  /*******************Kontakt*********************/
-  .FirstSectionKontakty__title{color: $primary;}
+/*******************Kontakt*********************/
+.FirstSectionKontakty__title {
+  color: $primary;
+}
 
-  .FirstSectionKontakty__icon, .SecondtSectionKontakty__icon{
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.FirstSectionKontakty__icon,
+.SecondtSectionKontakty__icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FirstSectionKontakty__icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+.FirstSectionKontakty__description {
+  padding-top: $space;
+  font-family: $font-special;
+  display: block;
+  color: $primary;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.FirstSectionKontakty__description a {
+  text-decoration: none;
+  color: $primary;
+}
+
+.FirstSectionKontakty__description a:hover,
+.FirstSectionKontakty__description a:focus {
+  color: $contrast;
+}
+
+.FirstSectionKontakty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 5px;
+  background-color: $primary;
+  margin: 30px auto;
+}
+
+@media screen and (min-width:650px) {
+  .FirstSectionKontakty__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .FirstSectionKontakty__icon img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+
+  .SecondSectionKontakty__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  
-  .FirstSectionKontakty__description {
-    padding-top: $space ;
-    font-family: $font-special;
-    display: block;
-    color: $primary;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
+
+  .FirstSectionKontakty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .FirstSectionKontakty__description a {text-decoration: none;
-      color: $primary;}
+}
 
-    .FirstSectionKontakty__description a:hover,
-    .FirstSectionKontakty__description a:focus {
-      color: $contrast;
-    }
+.SecondSectionKontakty__item {
+  padding-bottom: $space;
+}
 
-    .FirstSectionKontakty__title::after {
-      content: "";
-      display: block;
-      border: 1px solid $primary;
-      width: 100px;
-      height: 5px;
-      background-color: $primary;
-      margin: 30px auto;
-    }
+/*********formular********/
 
-    @media screen and (min-width:650px){
-      .FirstSectionKontakty__grid{display: grid;
-      grid-template-columns:  1fr 1fr ;
-      }
-      .SecondSectionKontakty__grid{display: grid;
-      grid-template-columns: repeat(4, 1fr);}
+.ThirdsectionKontakty__form {
+  min-width: 150px;
+  min-height: 200px;
+}
 
-      .FirstSectionKontakty {display: grid;
-        grid-template-columns: 1fr 1fr;}
-    }
-    .SecondSectionKontakty__item {padding-bottom: $space;}
+.form-field {
+  margin-bottom: $space;
+}
 
-    /*********formular********/
+.form-field label {
+  display: block;
+  color: $primary;
+  font-family: $font-special;
+  font-size: 15px;
+  margin-bottom: $space/2;
+}
 
-    .ThirdsectionKontakty__form{min-width: 150px;
-    min-height: 200px;}
+.form-field :is(input, textarea, select) {
+  width: 50%;
+  padding: $space/2;
+  border: 1px solid $primary;
+  border-radius: 2px;
+}
 
-    .form-field {
-      margin-bottom: $space;
-    }
-    
-    .form-field label {
-      display: block;
-      color: $primary;
-      font-family: $font-special;
-      font-size: 15px;
-      margin-bottom: $space/2;
-    }
-    
-    .form-field :is(input, textarea, select) {
-      width: 50%;
-      padding: $space/2;
-      border: 1px solid $primary;
-      border-radius: 2px;
-    }
-    
-    .required:after {
-      content: "*";
-      color: $contrast;
-      margin-left: 4px;
-    }
-    .ThirdsectionKontakty__form__title{font-family: $font-special;}
-    .FirstSectionKontakty {display: grid;
-    grid-template-columns: 1fr;}
+.required:after {
+  content: "*";
+  color: $contrast;
+  margin-left: 4px;
+}
 
-    @media screen and (min-width:800px){ 
-    .FirstSectionKontakty {display: grid;
+.ThirdsectionKontakty__form__title {
+  font-family: $font-special;
+}
+
+.FirstSectionKontakty {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:800px) {
+  .FirstSectionKontakty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ThirdsectionKontakty__form__grid {
+    padding: $doublespace*3 $doublespace;
+    ;
+  }
+}
+
+
+
+/**************************Partneri*************************/
+.FirstsectionPartneri .FirstsectionPartneri__right__title {
+  color: $primary;
+  padding-left: $space;
+}
+
+.FirstsectionPartneri__item {
+  width: 200px;
+  height: 250px;
+  border: 3px solid $primary;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+
+.FirstsectionPartneri__icon {
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px solid $primary;
+  justify-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.FirstSectionPartneri__icon .img {
+  object-fit: contain;
+
+}
+
+.FirstsectionPartneri__description {
+  text-align: center;
+}
+
+.FirstsectionPartneri{display: grid;
+grid-template-columns: 1fr;}
+
+.FirstsectionPartneri__right{display: grid;
+  gap: $space;
+  grid-template-columns: 1fr;}
+
+  @media screen and (min-width:700px) {
+    .FirstsectionPartneri{display: grid;
       grid-template-columns: 1fr 1fr;}
-    .ThirdsectionKontakty__form__grid {padding: $doublespace*3 $doublespace;
-   ;}
+    .FirstsectionPartneri__right{
+      display: grid;
+      grid-template-columns: 1fr 1fr;}
     }
-  
+
+    .FirstsectionPartneri__left{padding-left: $space;}
