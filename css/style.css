@@ -439,6 +439,7 @@ button {
   text-align: center;
   margin: 30px auto;
   padding-bottom: 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
 .SecondSectionOnas__portfolio__photo {
@@ -581,33 +582,64 @@ button {
   }
 }
 /**************************Partneri*************************/
-.FirstsectionPartneri .FirstsectionPartneri__right__title {
+.FirstsectionPartneri__right__title {
   color: #123d5c;
-  padding-left: 15px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
-.FirstsectionPartneri__item {
+.FirstsectionPartneri__right__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+.FirstsectionPartneri {
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+/*.FirstsectionPartneri__item {
   width: 200px;
   height: 250px;
-  border: 3px solid #123d5c;
+  border: 3px solid $primary;
   margin: 0 auto;
-  background-color: white;
+  background-color: $white;
 }
+
 
 .FirstsectionPartneri__icon {
   width: 150px;
-  margin: 0 auto;
+  height: 150px;
+  margin: $space auto;
   border-radius: 5px;
-  border: 3px solid #123d5c;
+  border: 3px solid $secondary;
   justify-items: center;
   justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;
+}*/
+.FirstsectionPartneri__item {
+  border: 2px solid #597a90;
+  background-color: #c0d3dd;
+  border-radius: 3px;
+  width: 75%;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
-.FirstSectionPartneri__icon .img {
-  -o-object-fit: contain;
-     object-fit: contain;
+.FirstsectionPartneri__icon {
+  border: 5px solid white;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 3px;
 }
 
 .FirstsectionPartneri__description {
@@ -626,7 +658,7 @@ button {
 }
 
 @media screen and (min-width: 700px) {
-  .FirstsectionPartneri {
+  .FirstsectionPartneri__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -635,7 +667,20 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .FirstsectionPartneri__left {
+    padding-left: 60px;
+  }
 }
-.FirstsectionPartneri__left {
+.FirstsectionPartneri__button {
   padding-left: 15px;
+}
+
+.FirstsectionPartneri__item p a {
+  text-decoration: none;
+  color: #123d5c;
+}
+
+.FirstsectionPartneri__item p a:hover {
+  color: #b23444;
 }/*# sourceMappingURL=style.css.map */

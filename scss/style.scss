@@ -473,6 +473,8 @@ button {
   text-align: center;
   margin: $doublespace auto;
   padding-bottom: $space;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+  
 }
 
 .SecondSectionOnas__portfolio__photo {
@@ -622,12 +624,23 @@ button {
 
 
 /**************************Partneri*************************/
-.FirstsectionPartneri .FirstsectionPartneri__right__title {
+.FirstsectionPartneri__right__title {
   color: $primary;
-  padding-left: $space;
+  text-align: center;
+  font-family: $font-special;
 }
 
-.FirstsectionPartneri__item {
+.FirstsectionPartneri__right__title::after {
+  content: "";
+  display: block;
+  border: 1px solid $primary;
+  width: 100px;
+  height: 5px;
+  background-color: $primary;
+  margin: 30px auto;
+}
+.FirstsectionPartneri{background-color: rgba($lightblue, $background-opacity);}
+/*.FirstsectionPartneri__item {
   width: 200px;
   height: 250px;
   border: 3px solid $primary;
@@ -638,18 +651,34 @@ button {
 
 .FirstsectionPartneri__icon {
   width: 150px;
-  margin: 0 auto;
+  height: 150px;
+  margin: $space auto;
   border-radius: 5px;
-  border: 3px solid $primary;
+  border: 3px solid $secondary;
   justify-items: center;
   justify-content: center;
-  object-fit: cover;
-}
-
-.FirstSectionPartneri__icon .img {
   object-fit: contain;
-
+}*/
+.FirstsectionPartneri__item {
+  border: 2px solid $secondary;
+  background-color: $lightblue;
+  border-radius: 3px;
+  width: 75%;
+  text-align: center;
+  margin: $doublespace auto;
+  padding-bottom: $space;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
+
+.FirstsectionPartneri__icon  {
+  border: 5px solid white;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 3px;
+}
+
 
 .FirstsectionPartneri__description {
   text-align: center;
@@ -663,11 +692,17 @@ grid-template-columns: 1fr;}
   grid-template-columns: 1fr;}
 
   @media screen and (min-width:700px) {
-    .FirstsectionPartneri{display: grid;
+    .FirstsectionPartneri__grid{display: grid;
       grid-template-columns: 1fr 1fr;}
     .FirstsectionPartneri__right{
       display: grid;
       grid-template-columns: 1fr 1fr;}
+      .FirstsectionPartneri__left {padding-left: $doublespace*2;}
     }
+   
+    .FirstsectionPartneri__button{padding-left: $space;}
 
-    .FirstsectionPartneri__left{padding-left: $space;}
+    .FirstsectionPartneri__item p a {text-decoration: none;
+    color:$primary;}
+
+    .FirstsectionPartneri__item p a:hover {color: $contrast;}
