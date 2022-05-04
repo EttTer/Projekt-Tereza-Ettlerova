@@ -33,7 +33,7 @@ h3 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 56px;
 }
 
 h2 {
@@ -194,6 +194,7 @@ img {
   border: 1px solid white;
   min-height: 300px;
   margin: 0 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
 .secondsection__left img {
@@ -219,6 +220,7 @@ img {
   padding-top: 7.5px;
   margin: 0 15px;
   min-height: 300px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
 .secondsection__right__title,
@@ -324,6 +326,7 @@ img {
 
 .FirstsectionProjekty__left {
   margin-bottom: 30px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
 @media screen and (min-width: 950px) {
@@ -462,6 +465,10 @@ button {
   color: #123d5c;
 }
 
+.FirstsectionPartneri {
+  padding: 0 15px 30px 15px;
+}
+
 .FirstSectionKontakty__icon,
 .SecondtSectionKontakty__icon {
   width: 90px;
@@ -472,6 +479,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
 .FirstSectionKontakty__icon img {
@@ -486,8 +494,8 @@ button {
   font-family: "Montserrat", sans-serif;
   display: block;
   color: #123d5c;
-  font-size: 20px;
-  align-items: center;
+  font-size: 18px;
+  text-align: center;
   justify-content: center;
 }
 
@@ -533,8 +541,8 @@ button {
 
 /*********formular********/
 .ThirdsectionKontakty__form {
-  min-width: 150px;
-  min-height: 200px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .form-field {
@@ -550,7 +558,7 @@ button {
 }
 
 .form-field :is(input, textarea, select) {
-  width: 50%;
+  width: 85%;
   padding: 7.5px;
   border: 1px solid #123d5c;
   border-radius: 2px;
@@ -576,11 +584,13 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
-  .ThirdsectionKontakty__form__grid {
-    padding: 90px 30px;
-  }
 }
+.ThirdsectionKontakty__form__title {
+  margin-top: 0;
+  color: #123d5c;
+  font-size: 20px;
+}
+
 /**************************Partneri*************************/
 .FirstsectionPartneri__right__title {
   color: #123d5c;
