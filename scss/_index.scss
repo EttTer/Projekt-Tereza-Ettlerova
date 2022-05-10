@@ -1,0 +1,112 @@
+
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+@use 'footer';
+@use 'button';
+@use 'form';
+
+/******************Firstsection*************************/
+.Firstsection,
+.FirstSectionOnas,
+.FirstSectionKontakty,
+.SecondsectionProjekty {
+  padding: space.$space;
+  text-align: center;
+  color: colors.$primary;
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
+}
+
+.Firstsection__title,
+.SecondSectionKontakty__title,
+.FirstSectionKontakty__title,
+.FirstSectionOnas__title,
+.SecondsectionProjekty__title {
+  color: colors.$primary;
+  margin-top: space.$doublespace;
+  padding-left: space.$space;
+  text-align: center;
+}
+
+.Firstsection__title::after {
+  content: "";
+  display: block;
+  border: 1px solid colors.$primary;
+  width: 100px;
+  height: 5px;
+  background-color: colors.$primary;
+  margin: 30px auto;
+}
+
+.Firstsection__text,
+.FirstSectionOnas__text {
+  text-align: left;
+  color: colors.$primary;
+  margin-top: space.$doublespace;
+  padding-left: space.$space;
+}
+
+@media screen and (min-width: 650px) {
+}
+
+/******************Secondsection*************************/
+
+.Secondsection,
+.FirstsectionProjekty {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: space.$doublespace;
+  margin-top: space.$doublespace;
+}
+
+.Secondsection__left,
+.FirstsectionProjekty__left {
+  border: 1px solid colors.$white;
+  min-height: 300px;
+  margin: 0 space.$space;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Secondsection__left img,
+.FirstsectionProjekty__left img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.Secondsection__right,
+.FirstsectionProjekty__right {
+  border: 5px solid colors.$primary;
+  background-color: colors.$lightblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: fonts.$font-special;
+  color: colors.$primary;
+  padding-top: space.$space/2;
+  margin: 0 space.$space;
+
+  min-height: 300px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Secondsection__right__title,
+.FirstsectionProjekty__right__title {
+  border: 2px solid colors.$secondary;
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
+  color: colors.$primary;
+  display: inline;
+  font-size: 25px;
+  margin: 0 space.$space;
+  padding: space.$space;
+}
+
+.Secondsestion__right__text,
+.FirstsectionProjekty__right__text {
+  font-size: 18px;
+  text-align: left;
+  padding: space.$space;
+  padding-bottom: 0;
+}
+

@@ -1,0 +1,113 @@
+
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+/******************Partneři*************************/
+.FirstsectionPartneri__right__title,
+.FirstsectionKontakty__right__title {
+  color: colors.$primary;
+  text-align: center;
+  font-family: fonts.$font-special;
+}
+
+.FirstsectionPartneri__right__title::after {
+  content: "";
+  display: block;
+  border: 1px solid colors.$primary;
+  width: 100px;
+  height: 5px;
+  background-color: colors.$primary;
+  margin: 30px auto;
+}
+
+.FirstsectionPartneri,
+.FirstsectionKontakty {
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
+}
+
+.FirstsectionPartneri__item {
+  border: 2px solid colors.$secondary;
+  background-color: colors.$lightblue;
+  border-radius: 3px;
+  width: 75%;
+  text-align: center;
+  margin: space.$doublespace auto;
+  padding-bottom: space.$space;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.FirstsectionPartneri__icon,
+.FirstSectionKontakty__icon {
+  border: 5px solid white;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.FirstsectionPartneri__description {
+  text-align: center;
+}
+
+.FirstsectionPartneri,
+.FirstSectionKontakty {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.FirstsectionPartneri__right,
+.FirstSectionKontakty__right {
+  display: grid;
+  gap: space.$space;
+  grid-template-columns: 1fr;
+}
+
+.FirstsectionPartneri__button {
+  margin-bottom: space.$doublespace;
+}
+
+@media screen and (min-width: 700px) {
+  .FirstsectionPartneri__grid,
+  .FirstsectionKontakty__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionPartneri__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionKontakty__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionPartneri__left,
+  .FirstsectionKontakty__left {
+    padding-left: space.$doublespace * 2;
+  }
+}
+
+.FirstsectionPartneri__button {
+  padding-left: space.$space;
+}
+
+.FirstsectionPartneri__item p a {
+  text-decoration: none;
+  color: colors.$secondary;
+}
+
+.FirstsectionPartneri__item p a:hover {
+  color: colors.$contrast;
+}
+
+.FirstsectionProjekty__right__title + p {
+  font-weight: 700;
+}
+
+.Secondsection__right__title + p {
+  font-weight: 700;
+}

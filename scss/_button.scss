@@ -2,9 +2,7 @@
 @use 'fonts';
 @use 'base';
 @use 'space';
-@use 'header';
-@use 'menu';
-@use 'footer';
+
 
 
 /******************Tlačítko*************************/
@@ -25,6 +23,7 @@ button {
   }
   
   /******************Tlačítko grid*************************/
+  
   @media screen and (min-width: 950px) {
     .SecondsectionProjekty__grid,
     .ThirdsectionProjekty__grid {

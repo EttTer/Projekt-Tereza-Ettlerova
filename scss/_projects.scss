@@ -1,0 +1,90 @@
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+@use 'footer';
+@use 'button';
+@use 'form';
+@use 'index';
+
+/******************Projekty*************************/
+
+.SecondsectionProjekty__title,
+.ThirdsectionProjekty__title {
+  padding-left: space.$space;
+  text-align: left;
+}
+
+.FirstsectionProjekty__left {
+  margin-bottom: space.$doublespace;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+@media screen and (min-width: 950px) {
+  .Secondsection,
+  .FirstsectionProjekty {
+    display: grid;
+    gap: space.$doublespace;
+    grid-template-columns: 1fr 1fr;
+    margin: space.$doublespace 0;
+  }
+
+  .FirstsectionProjekty__left {
+    margin-bottom: 0;
+  }
+}
+
+.ThirdsectionProjekty {
+  margin-bottom: space.$doublespace;
+  padding: space.$space;
+  text-align: center;
+}
+
+.ThirdsectionProjekty__picture {
+  border: 1px solid white;
+  margin: space.$doublespace 0 0 0;
+  width: 100%;
+}
+
+.ThirdsectionProjekty__picture img {
+  width: 100%;
+  max-height: 325px;
+  object-fit: cover;
+}
+
+.SecondsectionProjekty__text__list__item,
+.ThirdsectionProjekty__text__list__item {
+  text-align: left;
+}
+
+.ThirdsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid colors.$primary;
+  width: 100px;
+  height: 2px;
+  background-color: colors.$secondary;
+}
+
+.SecondsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid colors.$primary;
+  width: 100px;
+  height: 2px;
+  background-color: colors.$secondary;
+}
+
+.FirstsectionProjekty__right__text--bigger {
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: space.$space;
+}
+
+.FirstsectionProjekty__right__text {
+  margin: space.$space 0;
+  padding-top: 0;
+}
+

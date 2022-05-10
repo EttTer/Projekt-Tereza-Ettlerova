@@ -1,0 +1,34 @@
+
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+
+/******************Vizitka*************************/
+
+.SecondSectionOnas__portfolio__item {
+    border: 2px solid colors.$secondary;
+    background-color: colors.$lightblue;
+    border-radius: 3px;
+    width: 75%;
+    min-height: 300px;
+    text-align: center;
+    margin: space.$doublespace auto;
+    padding-bottom: space.$space;
+    box-shadow: 2px 2px 2px rgb(173, 167, 167);
+  }
+  
+  .SecondSectionOnas__portfolio__photo {
+    border: 5px solid white;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .SecondSectionOnas__portfolio {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

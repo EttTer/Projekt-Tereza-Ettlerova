@@ -1,0 +1,16 @@
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+
+/******************O nás*************************/
+
+.FirstSectionOnas__title::after {
+    content: "";
+    display: block;
+    border: 1px solid colors.$primary;
+    width: 100px;
+    height: 5px;
+    background-color: colors.$primary;
+    margin: 30px auto;
+  }
