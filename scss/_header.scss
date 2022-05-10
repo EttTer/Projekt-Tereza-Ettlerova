@@ -1,0 +1,28 @@
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+
+
+
+/******************Header*************************/
+.Header__contact {
+    padding: space.$space * 2;
+    background-color: rgba(colors.$lightblue, space.$background-opacity);
+  }
+  /*.Header__inner {background-image: url(../images/pozadi.jpg);
+  opacity: 0.7;}*/
+  
+  .Header__logo {
+    border: 2px solid colors.$primary space.$background-halfopacity;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+  
+    margin: 0;
+    position: absolute;
+    top:space.$space/8;
+    right: space.$space/2;
+  
+    box-shadow: 2px 2px 2px rgb(173, 167, 167);
+  }

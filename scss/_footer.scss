@@ -1,0 +1,55 @@
+
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+
+/******************Footer*************************/
+
+.Footer a {
+    color: colors.$primary;
+  }
+  
+  .Footer a:hover,
+  .Footer a:focus {
+    color: colors.$contrast;
+  }
+  
+  .Footer__copyright {
+    padding: space.$space;
+    font-size: 14px;
+    text-align: center;
+    background-color: colors.$lightblue;
+    color: colors.$primary;
+    background-color: rgba(colors.$lightblue, space.$background-opacity);
+  }
+  
+  .Footer__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .Footer__links li:not(:last-child) {
+    margin-bottom: space.$space/2;
+  }
+  
+  .Footer__kontakt {
+    padding-left: space.$space;
+  }
+  
+  .Footer__tel,
+  .Footer__mail {
+    color: colors.$primary;
+  }
+  
+  .Footer__title::after {
+    content: "";
+    display: block;
+    border: 1px solid colors.$primary;
+    width: 75px;
+    height: 2px;
+    background-color: colors.$secondary;
+  }

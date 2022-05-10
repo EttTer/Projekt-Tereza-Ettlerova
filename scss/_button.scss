@@ -1,0 +1,38 @@
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+@use 'footer';
+
+
+/******************Tlačítko*************************/
+button {
+    padding: space.$space;
+    background-color: colors.$secondary;
+    font-size: 18px;
+    font-family: fonts.$font-special;
+    border: 1px solid colors.$secondary;
+    color: colors.$white;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgb(173, 167, 167);
+  }
+  
+  button:hover {
+    color: colors.$contrast;
+  }
+  
+  /******************Tlačítko grid*************************/
+  @media screen and (min-width: 950px) {
+    .SecondsectionProjekty__grid,
+    .ThirdsectionProjekty__grid {
+      display: grid;
+      gap: space.$doublespace;
+      grid-template-columns: 1fr 1fr;
+      margin: space.$doublespace 0;
+      align-items: center;
+    }
+  }
+  

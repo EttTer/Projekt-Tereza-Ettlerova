@@ -1,0 +1,72 @@
+
+@use 'colors';
+@use 'fonts';
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+@use 'footer';
+@use 'button';
+/******************Formulář*************************/
+
+.ThirdsectionKontakty__form {
+    min-width: 300px;
+    min-height: 300px;
+  }
+  
+  .form-field {
+    margin-bottom: space.$space;
+  }
+  
+  .form-field label {
+    display: block;
+    color: colors.$primary;
+    font-family: fonts.$font-special;
+    font-size: 15px;
+    margin-bottom: space.$space/2;
+  }
+  
+  .form-field :is(input, textarea, select) {
+    width: 85%;
+    padding: space.$space/2;
+    border: 1px solid colors.$primary;
+    border-radius: 2px;
+  }
+  
+  .required:after {
+    content: "*";
+    color: colors.$contrast;
+    margin-left: 4px;
+  }
+  
+  .ThirdsectionKontakty__form__title {
+    font-family: fonts.$font-special;
+  }
+  
+  .FirstSectionKontakty {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .FirstSectionKontakty {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .ThirdsectionKontakty__form__title {
+    margin-top: 0;
+    color: colors.$primary;
+    font-size: 20px;
+  }
+  
+  .FirstsectionKontakty__left,
+  .FirstsectionPartneri__left {
+    padding-left: space.$doublespace;
+  }
+  
+  .FirstsectionKontakty__right__title {
+    margin-top: 0;
+    padding-top: 25px;
+  }

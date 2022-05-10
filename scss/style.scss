@@ -1,6 +1,12 @@
 @use 'colors';
 @use 'fonts';
-
+@use 'base';
+@use 'space';
+@use 'header';
+@use 'menu';
+@use 'footer';
+@use 'button';
+@use 'form';
 
 /* intuitivnější box-sizing pro všechny prvky na stránce */
 html {
@@ -14,123 +20,15 @@ html {
 }
 
 
-
-$background-opacity: 0.5;
-$background-halfopacity: 0.8;
-$space: 15px;
-$doublespace: 30px;
-
-/******************Base*************************/
-body {
-  margin: 0;
-  font-family: fonts.$font-defaut;
-  background-color: colors.$white;
-  font-size: 18px;
-  color: colors.$primary;
-}
-
-h1,
-h2 {
-  font-family: fonts.$font-special;
-  font-weight: bold;
-  color: colors.$primary;
-  padding-left: $doublespace;
-}
-
-h3 {
-  font-family: fonts.$font-special;
-  font-weight: normal;
-  color: colors.$secondary;
-  font-size: 25px;
-}
-
-h1 {
-  font-size: 56px;
-  
-}
-
-h2 {
-  font-size: 32px;
-}
-
-img {
-  width: 100%;
-}
-
-.Max__width {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/******************Header*************************/
-.Header__contact {
-  padding: $space * 2;
-  background-color: rgba(colors.$lightblue, $background-opacity);
-}
-/*.Header__inner {background-image: url(../images/pozadi.jpg);
-opacity: 0.7;}*/
-
-.Header__logo {
-  border: 2px solid colors.$primary $background-halfopacity;
-  border-radius: 150px;
-  width: 150px;
-  height: 150px;
-
-  margin: 0;
-  position: absolute;
-  top: $space/8;
-  right: $space/2;
-
-  box-shadow: 2px 2px 2px rgb(173, 167, 167);
-}
-
-/******************Menu*************************/
-
-.Menu__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.Menu__item {
-  margin: $space 0;
-  padding: 0;
-  flex: 1 1 calc(100% / 6);
-}
-
-.Menu__item:not(:last-child) {
-  border-right: 2px solid colors.$secondary;
-  max-height: 50px;
-}
-
-.Menu__link {
-  display: block;
-  padding: $space;
-  font-family: fonts.$font-special;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  color: colors.$primary;
-  text-align: center;
-}
-
-.Menu__link:hover {
-  background-color: colors.$secondary;
-  color: colors.$white;
-  padding: $space;
-  transform: scale(1.4);
-}
-
 /******************Firstsection*************************/
 .Firstsection,
 .FirstSectionOnas,
 .FirstSectionKontakty,
 .SecondsectionProjekty {
-  padding: $space;
+  padding: space.$space;
   text-align: center;
   color: colors.$primary;
-  background-color: rgba(colors.$lightblue, $background-opacity);
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
 }
 
 .Firstsection__title,
@@ -139,8 +37,8 @@ opacity: 0.7;}*/
 .FirstSectionOnas__title,
 .SecondsectionProjekty__title {
   color: colors.$primary;
-  margin-top: $doublespace;
-  padding-left: $space;
+  margin-top: space.$doublespace;
+  padding-left: space.$space;
   text-align: center;
 }
 
@@ -158,8 +56,8 @@ opacity: 0.7;}*/
 .FirstSectionOnas__text {
   text-align: left;
   color: colors.$primary;
-  margin-top: $doublespace;
-  padding-left: $space;
+  margin-top: space.$doublespace;
+  padding-left: space.$space;
 }
 
 @media screen and (min-width: 650px) {
@@ -171,15 +69,15 @@ opacity: 0.7;}*/
 .FirstsectionProjekty {
   display: grid;
   grid-template-columns: 1fr;
-  gap: $doublespace;
-  margin-top: $doublespace;
+  gap: space.$doublespace;
+  margin-top: space.$doublespace;
 }
 
 .Secondsection__left,
 .FirstsectionProjekty__left {
   border: 1px solid colors.$white;
   min-height: 300px;
-  margin: 0 $space;
+  margin: 0 space.$space;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
@@ -197,8 +95,8 @@ opacity: 0.7;}*/
   font-size: 25px;
   font-family: fonts.$font-special;
   color: colors.$primary;
-  padding-top: $space/2;
-  margin: 0 $space;
+  padding-top: space.$space/2;
+  margin: 0 space.$space;
 
   min-height: 300px;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
@@ -207,80 +105,34 @@ opacity: 0.7;}*/
 .Secondsection__right__title,
 .FirstsectionProjekty__right__title {
   border: 2px solid colors.$secondary;
-  background-color: rgba(colors.$lightblue, $background-opacity);
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
   color: colors.$primary;
   display: inline;
   font-size: 25px;
-  margin: 0 $space;
-  padding: $space;
+  margin: 0 space.$space;
+  padding: space.$space;
 }
 
 .Secondsestion__right__text,
 .FirstsectionProjekty__right__text {
   font-size: 18px;
   text-align: left;
-  padding: $space;
+  padding: space.$space;
   padding-bottom: 0;
 }
 
-/******************Footer*************************/
 
-.Footer a {
-  color: colors.$primary;
-}
-
-.Footer a:hover,
-.Footer a:focus {
-  color: colors.$contrast;
-}
-
-.Footer__copyright {
-  padding: $space;
-  font-size: 14px;
-  text-align: center;
-  background-color: colors.$lightblue;
-  color: colors.$primary;
-  background-color: rgba(colors.$lightblue, $background-opacity);
-}
-
-.Footer__links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.Footer__links li:not(:last-child) {
-  margin-bottom: $space/2;
-}
-
-.Footer__kontakt {
-  padding-left: $space;
-}
-
-.Footer__tel,
-.Footer__mail {
-  color: colors.$primary;
-}
-
-.Footer__title::after {
-  content: "";
-  display: block;
-  border: 1px solid colors.$primary;
-  width: 75px;
-  height: 2px;
-  background-color: colors.$secondary;
-}
 
 /******************Projekty*************************/
 
 .SecondsectionProjekty__title,
 .ThirdsectionProjekty__title {
-  padding-left: $space;
+  padding-left: space.$space;
   text-align: left;
 }
 
 .FirstsectionProjekty__left {
-  margin-bottom: $doublespace;
+  margin-bottom: space.$doublespace;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
@@ -288,9 +140,9 @@ opacity: 0.7;}*/
   .Secondsection,
   .FirstsectionProjekty {
     display: grid;
-    gap: $doublespace;
+    gap: space.$doublespace;
     grid-template-columns: 1fr 1fr;
-    margin: $doublespace 0;
+    margin: space.$doublespace 0;
   }
 
   .FirstsectionProjekty__left {
@@ -299,14 +151,14 @@ opacity: 0.7;}*/
 }
 
 .ThirdsectionProjekty {
-  margin-bottom: $doublespace;
-  padding: $space;
+  margin-bottom: space.$doublespace;
+  padding: space.$space;
   text-align: center;
 }
 
 .ThirdsectionProjekty__picture {
   border: 1px solid white;
-  margin: $doublespace 0 0 0;
+  margin: space.$doublespace 0 0 0;
   width: 100%;
 }
 
@@ -342,42 +194,14 @@ opacity: 0.7;}*/
 .FirstsectionProjekty__right__text--bigger {
   text-align: left;
   margin-bottom: 0;
-  padding-left: $space;
+  padding-left: space.$space;
 }
 
 .FirstsectionProjekty__right__text {
-  margin: $space 0;
+  margin: space.$space 0;
   padding-top: 0;
 }
 
-/******************Tlačítko*************************/
-button {
-  padding: $space;
-  background-color: colors.$secondary;
-  font-size: 18px;
-  font-family: fonts.$font-special;
-  border: 1px solid colors.$secondary;
-  color: colors.$white;
-  cursor: pointer;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px rgb(173, 167, 167);
-}
-
-button:hover {
-  color: colors.$contrast;
-}
-
-/******************Tlačítko grid*************************/
-@media screen and (min-width: 950px) {
-  .SecondsectionProjekty__grid,
-  .ThirdsectionProjekty__grid {
-    display: grid;
-    gap: $doublespace;
-    grid-template-columns: 1fr 1fr;
-    margin: $doublespace 0;
-    align-items: center;
-  }
-}
 
 /******************O nás*************************/
 
@@ -400,8 +224,8 @@ button:hover {
   width: 75%;
   min-height: 300px;
   text-align: center;
-  margin: $doublespace auto;
-  padding-bottom: $space;
+  margin: space.$doublespace auto;
+  padding-bottom: space.$space;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
@@ -423,7 +247,7 @@ button:hover {
 /******************Kontakty*************************/
 
 .FirstsectionKontakty {
-  padding: 0 $space $doublespace $space;
+  padding: 0 space.$space space.$doublespace space.$space;
 }
 
 .FirstSectionKontakty__icon {
@@ -454,7 +278,7 @@ button:hover {
 }
 
 .FirstSectionKontakty__description {
-  padding-top: $space;
+  padding-top: space.$space;
   font-family: fonts.$font-special;
   display: block;
   color: colors.$primary;
@@ -500,72 +324,10 @@ button:hover {
 }
 
 .SecondSectionKontakty__item {
-  padding-bottom: $space;
+  padding-bottom: space.$space;
 }
 
-/******************Formulář*************************/
 
-.ThirdsectionKontakty__form {
-  min-width: 300px;
-  min-height: 300px;
-}
-
-.form-field {
-  margin-bottom: $space;
-}
-
-.form-field label {
-  display: block;
-  color: colors.$primary;
-  font-family: fonts.$font-special;
-  font-size: 15px;
-  margin-bottom: $space/2;
-}
-
-.form-field :is(input, textarea, select) {
-  width: 85%;
-  padding: $space/2;
-  border: 1px solid colors.$primary;
-  border-radius: 2px;
-}
-
-.required:after {
-  content: "*";
-  color: colors.$contrast;
-  margin-left: 4px;
-}
-
-.ThirdsectionKontakty__form__title {
-  font-family: fonts.$font-special;
-}
-
-.FirstSectionKontakty {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 800px) {
-  .FirstSectionKontakty {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.ThirdsectionKontakty__form__title {
-  margin-top: 0;
-  color: colors.$primary;
-  font-size: 20px;
-}
-
-.FirstsectionKontakty__left,
-.FirstsectionPartneri__left {
-  padding-left: $doublespace;
-}
-
-.FirstsectionKontakty__right__title {
-  margin-top: 0;
-  padding-top: 25px;
-}
 
 /******************Partneři*************************/
 .FirstsectionPartneri__right__title,
@@ -587,7 +349,7 @@ button:hover {
 
 .FirstsectionPartneri,
 .FirstsectionKontakty {
-  background-color: rgba(colors.$lightblue, $background-opacity);
+  background-color: rgba(colors.$lightblue, space.$background-opacity);
 }
 
 .FirstsectionPartneri__item {
@@ -596,8 +358,8 @@ button:hover {
   border-radius: 3px;
   width: 75%;
   text-align: center;
-  margin: $doublespace auto;
-  padding-bottom: $space;
+  margin: space.$doublespace auto;
+  padding-bottom: space.$space;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
 }
 
@@ -624,12 +386,12 @@ button:hover {
 .FirstsectionPartneri__right,
 .FirstSectionKontakty__right {
   display: grid;
-  gap: $space;
+  gap: space.$space;
   grid-template-columns: 1fr;
 }
 
 .FirstsectionPartneri__button {
-  margin-bottom: $doublespace;
+  margin-bottom: space.$doublespace;
 }
 
 @media screen and (min-width: 700px) {
@@ -651,12 +413,12 @@ button:hover {
 
   .FirstsectionPartneri__left,
   .FirstsectionKontakty__left {
-    padding-left: $doublespace * 2;
+    padding-left: space.$doublespace * 2;
   }
 }
 
 .FirstsectionPartneri__button {
-  padding-left: $space;
+  padding-left: space.$space;
 }
 
 .FirstsectionPartneri__item p a {

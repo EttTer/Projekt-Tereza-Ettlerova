@@ -1,0 +1,45 @@
+@use 'fonts';
+@use 'colors';
+@use 'space';
+
+
+body {
+    margin: 0;
+    font-family: fonts.$font-defaut;
+    background-color: colors.$white;
+    font-size: 18px;
+    color: colors.$primary;
+  }
+  
+  h1,
+  h2 {
+    font-family: fonts.$font-special;
+    font-weight: bold;
+    color: colors.$primary;
+    padding-left: space.$doublespace;
+  }
+  
+  h3 {
+    font-family: fonts.$font-special;
+    font-weight: normal;
+    color: colors.$secondary;
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .Max__width {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
