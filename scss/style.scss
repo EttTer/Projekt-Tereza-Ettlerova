@@ -14,16 +14,7 @@
 @use 'contacts';
 @use 'partners';
 
-/* intuitivnější box-sizing pro všechny prvky na stránce */
-html {
-  box-sizing: border-box;
-}
 
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
 
 
 

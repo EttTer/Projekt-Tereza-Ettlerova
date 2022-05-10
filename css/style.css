@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
 /******************Base*************************/
 body {
   margin: 0;
@@ -637,15 +648,4 @@ button:hover {
 
 .Secondsection__right__title + p {
   font-weight: 700;
-}
-
-/* intuitivnější box-sizing pro všechny prvky na stránce */
-html {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
 }/*# sourceMappingURL=style.css.map */
