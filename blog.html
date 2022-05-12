@@ -6,12 +6,12 @@ date: 2021-04-13T16:30
 <div class="FirstsectionPartneri">
 <h3 class="Firstsection__title">Blog</h3>
 
-{% for prispevek collections.blog %}
+{% for prispevek in collections.blog %}
 
-<h2>{{prispevek.data.title}}</h2>
-<p>{{ prispevek.data.perex}}</p>
-<p> <a href="{{prispevek.url}}">Celý článek</a></p>
+<h2>{{ prispevek.data.title }}</h2>
+<p>{{ prispevek.data.perex }}</p>
+<p><a href="{{ prispevek.url }}">Celý článek</a></p>
 
 
-{% endofor %}
+{% endfor %}
 </div>
