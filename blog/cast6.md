@@ -2,7 +2,7 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 6. část
 date: 2022-05-12T16:30
-perex: Cyklus na téma "Nenech mozek degenerovat" jako prevence úbytku kognitivních funkcí mozku
+perex: "Nenech mozek degenerovat" 5 pilířů zdravého mozku
 tags: blog
 ---
 Jak udržet bystrou mysl?

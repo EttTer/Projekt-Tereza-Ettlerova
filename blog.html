@@ -5,13 +5,13 @@ date: 2021-04-13T16:30
 ---
 <div class="FirstsectionPartneri">
 <h3 class="Firstsection__title">Blog</h3>
-
+<div class="Firstsection__collections">
 {% for prispevek in collections.blog %}
 
-<h2>{{ prispevek.data.title }}</h2>
-<p>{{ prispevek.data.perex }}</p>
-<p><a href="{{ prispevek.url }}">Celý článek</a></p>
-
+<h2 class="Firstsection__collections__title">{{ prispevek.data.title }}</h2>
+<p class="Firstsection__collections__text">{{ prispevek.data.perex }}</p>
+<button><a href="{{ prispevek.url }}">Celý článek</a></button>
 
 {% endfor %}
+</div>
 </div>
