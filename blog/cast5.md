@@ -3,6 +3,7 @@ layout: article.njk
 title: Nenech mozek degenerovat -51. část
 date: 2022-05-12T16:30
 perex: Cyklus na téma "Nenech mozek degenerovat" jako prevence úbytku kognitivních funkcí mozku
+tags: blog
 ---
 Jak svět vnímáme, kdo jsme, jací jsme, to formuje náš mozek. Přizpůsobuje nás různým prostředím, utváří vzpomínky, dává nám zkušenosti.
 

@@ -3,6 +3,7 @@ layout: article.njk
 title: Nenech mozek degenerovat - 4. část
 date: 2022-05-12T16:30
 perex: Cyklus na téma "Nenech mozek degenerovat" jako prevence úbytku kognitivních funkcí mozku
+tags: blog
 ---
 Už víte, že na svém mozku se vyplatí makat. Autor metody pro jeho posílení, optimalizaci, který je celosvětově uznávaný neurochirg,sestavil seznam otázek. Otázky, které se týkají zdraví a potenciálu mozku. Pokud chete někam jít, posouvat se, je nutné si momentálně ověřit, jak na tom jste. A právě tyto otázky Vám s tím pomohou
 

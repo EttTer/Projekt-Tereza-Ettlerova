@@ -3,6 +3,7 @@ layout: article.njk
 title: Nenech mozek degenerovat - 1. část
 date: 2022-05-12T16:30
 perex: Cyklus na téma "Nenech mozek degenerovat" jako prevence úbytku kognitivních funkcí mozku
+tags: blog
 ---
 Chceme se věnovat mozku, posilování toho, co nás ve většině případů jako zdravotníky, živí.
 

@@ -3,6 +3,7 @@ layout: article.njk
 title: Nenech mozek degenerovat - 1. část
 date: 2022-05-12T16:30
 perex: Cyklus na téma "Nenech mozek degenerovat" jako prevence úbytku kognitivních funkcí mozku
+tags: blog
 ---
 Trend doby - ve zdravém, štíhlém těle, zdravý duch. Cvičte do padnutí, cvičte kardio, ne, necvičte kardio, cvičte silově, běhejte, neběhejte, držte diety, bez sacharidů, bez tuků, bez bílkovin, bez jídla, bez vody…….
 
