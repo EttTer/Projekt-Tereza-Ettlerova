@@ -1,0 +1,24 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fslightbox.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EttTer/Projekt-Tereza-Ettlerova.git"
+  },
+  "keywords": [],
+  "author": "Tereza Ettlerova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EttTer/Projekt-Tereza-Ettlerova/issues"
+  },
+  "homepage": "https://github.com/EttTer/Projekt-Tereza-Ettlerova#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

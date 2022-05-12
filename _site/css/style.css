@@ -1,0 +1,651 @@
+@charset "UTF-8";
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/******************Base*************************/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  font-size: 18px;
+  color: #123d5c;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #123d5c;
+  padding-left: 30px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #597a90;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+img {
+  width: 100%;
+}
+
+.Max__width {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/******************Header*************************/
+.Header__contact {
+  padding: 30px;
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+/*.Header__inner {background-image: url(../images/pozadi.jpg);
+opacity: 0.7;}*/
+.Header__logo {
+  border: 2px solid #123d5c 0.8;
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  position: absolute;
+  top: 1.875px;
+  right: 7.5px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+/******************Menu*************************/
+.Menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Menu__item {
+  margin: 15px 0;
+  padding: 0;
+  flex: 1 1 16.6666666667%;
+}
+
+.Menu__item:not(:last-child) {
+  border-right: 2px solid #597a90;
+  max-height: 50px;
+}
+
+.Menu__link {
+  display: block;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #123d5c;
+  text-align: center;
+}
+
+.Menu__link:hover {
+  background-color: #597a90;
+  color: white;
+  padding: 15px;
+  transform: scale(1.4);
+}
+
+/******************Footer*************************/
+.Footer a {
+  color: #123d5c;
+}
+
+.Footer a:hover,
+.Footer a:focus {
+  color: #b23444;
+}
+
+.Footer__copyright {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #c0d3dd;
+  color: #123d5c;
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+.Footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Footer__links li:not(:last-child) {
+  margin-bottom: 7.5px;
+}
+
+.Footer__kontakt {
+  padding-left: 15px;
+}
+
+.Footer__tel,
+.Footer__mail {
+  color: #123d5c;
+}
+
+.Footer__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 75px;
+  height: 2px;
+  background-color: #597a90;
+}
+
+/******************Tlačítko*************************/
+button {
+  padding: 15px;
+  background-color: #597a90;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #597a90;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+button:hover {
+  color: #b23444;
+}
+
+/******************Tlačítko grid*************************/
+@media screen and (min-width: 950px) {
+  .SecondsectionProjekty__grid,
+.ThirdsectionProjekty__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    align-items: center;
+  }
+}
+/******************Formulář*************************/
+.ThirdsectionKontakty__form {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  color: #123d5c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-bottom: 7.5px;
+}
+
+.form-field :is(input, textarea, select) {
+  width: 85%;
+  padding: 7.5px;
+  border: 1px solid #123d5c;
+  border-radius: 2px;
+}
+
+.required:after {
+  content: "*";
+  color: #b23444;
+  margin-left: 4px;
+}
+
+.ThirdsectionKontakty__form__title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.FirstSectionKontakty {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 800px) {
+  .FirstSectionKontakty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.ThirdsectionKontakty__form__title {
+  margin-top: 0;
+  color: #123d5c;
+  font-size: 20px;
+}
+
+.FirstsectionKontakty__left,
+.FirstsectionPartneri__left {
+  padding-left: 30px;
+}
+
+.FirstsectionKontakty__right__title {
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+/******************Firstsection*************************/
+.Firstsection,
+.FirstSectionOnas,
+.FirstSectionKontakty,
+.SecondsectionProjekty {
+  padding: 15px;
+  text-align: center;
+  color: #123d5c;
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+.Firstsection__title,
+.SecondSectionKontakty__title,
+.FirstSectionKontakty__title,
+.FirstSectionOnas__title,
+.SecondsectionProjekty__title {
+  color: #123d5c;
+  margin-top: 30px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.Firstsection__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+.Firstsection__text,
+.FirstSectionOnas__text {
+  text-align: left;
+  color: #123d5c;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+/******************Secondsection*************************/
+.Secondsection,
+.FirstsectionProjekty {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.Secondsection__left,
+.FirstsectionProjekty__left {
+  border: 1px solid white;
+  min-height: 300px;
+  margin: 0 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Secondsection__left img,
+.FirstsectionProjekty__left img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Secondsection__right,
+.FirstsectionProjekty__right {
+  border: 5px solid #123d5c;
+  background-color: #c0d3dd;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #123d5c;
+  padding-top: 7.5px;
+  margin: 0 15px;
+  min-height: 300px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Secondsection__right__title,
+.FirstsectionProjekty__right__title {
+  border: 2px solid #597a90;
+  background-color: rgba(192, 211, 221, 0.5);
+  color: #123d5c;
+  display: inline;
+  font-size: 25px;
+  margin: 0 15px;
+  padding: 15px;
+}
+
+.Secondsestion__right__text,
+.FirstsectionProjekty__right__text {
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+/******************Projekty*************************/
+.SecondsectionProjekty__title,
+.ThirdsectionProjekty__title {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.FirstsectionProjekty__left {
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+@media screen and (min-width: 950px) {
+  .Secondsection,
+.FirstsectionProjekty {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+  }
+
+  .FirstsectionProjekty__left {
+    margin-bottom: 0;
+  }
+}
+.ThirdsectionProjekty {
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.ThirdsectionProjekty__picture {
+  border: 1px solid white;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.ThirdsectionProjekty__picture img {
+  width: 100%;
+  max-height: 325px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.SecondsectionProjekty__text__list__item,
+.ThirdsectionProjekty__text__list__item {
+  text-align: left;
+}
+
+.ThirdsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 2px;
+  background-color: #597a90;
+}
+
+.SecondsectionProjekty__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 2px;
+  background-color: #597a90;
+}
+
+.FirstsectionProjekty__right__text--bigger {
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.FirstsectionProjekty__right__text {
+  margin: 15px 0;
+  padding-top: 0;
+}
+
+/******************O nás*************************/
+.FirstSectionOnas__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+/******************Vizitka*************************/
+.SecondSectionOnas__portfolio__item {
+  border: 2px solid #597a90;
+  background-color: #c0d3dd;
+  border-radius: 3px;
+  width: 75%;
+  min-height: 300px;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.SecondSectionOnas__portfolio__photo {
+  border: 5px solid white;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .SecondSectionOnas__portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/******************Kontakty*************************/
+.FirstsectionKontakty {
+  padding: 0 15px 30px 15px;
+}
+
+.FirstSectionKontakty__icon {
+  max-width: 90px;
+  max-height: 90px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.SecondtSectionKontakty__icon {
+  max-width: 90px;
+  max-height: 90px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 27px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.FirstSectionKontakty__icon img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.FirstSectionKontakty__description {
+  padding-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  color: #123d5c;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+}
+
+.FirstSectionKontakty__description a {
+  text-decoration: none;
+  color: #123d5c;
+}
+
+.FirstSectionKontakty__description a:hover,
+.FirstSectionKontakty__description a:focus {
+  color: #b23444;
+}
+
+.FirstsectionKontakty__right__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+.SecondSectionKontakty__title {
+  text-align: left;
+}
+
+@media screen and (min-width: 650px) {
+  .FirstSectionKontakty__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .SecondSectionKontakty__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.SecondSectionKontakty__item {
+  padding-bottom: 15px;
+}
+
+/******************Partneři*************************/
+.FirstsectionPartneri__right__title,
+.FirstsectionKontakty__right__title {
+  color: #123d5c;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.FirstsectionPartneri__right__title::after {
+  content: "";
+  display: block;
+  border: 1px solid #123d5c;
+  width: 100px;
+  height: 5px;
+  background-color: #123d5c;
+  margin: 30px auto;
+}
+
+.FirstsectionPartneri,
+.FirstsectionKontakty {
+  background-color: rgba(192, 211, 221, 0.5);
+}
+
+.FirstsectionPartneri__item {
+  border: 2px solid #597a90;
+  background-color: #c0d3dd;
+  border-radius: 3px;
+  width: 75%;
+  text-align: center;
+  margin: 30px auto;
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.FirstsectionPartneri__icon,
+.FirstSectionKontakty__icon {
+  border: 5px solid white;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.FirstsectionPartneri__description {
+  text-align: center;
+}
+
+.FirstsectionPartneri,
+.FirstSectionKontakty {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.FirstsectionPartneri__right,
+.FirstSectionKontakty__right {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.FirstsectionPartneri__button {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .FirstsectionPartneri__grid,
+.FirstsectionKontakty__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionPartneri__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionKontakty__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .FirstsectionPartneri__left,
+.FirstsectionKontakty__left {
+    padding-left: 60px;
+  }
+}
+.FirstsectionPartneri__button {
+  padding-left: 15px;
+}
+
+.FirstsectionPartneri__item p a {
+  text-decoration: none;
+  color: #597a90;
+}
+
+.FirstsectionPartneri__item p a:hover {
+  color: #b23444;
+}
+
+.FirstsectionProjekty__right__title + p {
+  font-weight: 700;
+}
+
+.Secondsection__right__title + p {
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
