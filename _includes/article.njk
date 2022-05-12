@@ -1,0 +1,26 @@
+---
+layout: main.njk
+title: Blog
+date: 2022-05-12T13:30
+---
+<div class="Firstsection__Article">
+<article class="Article">
+
+	<h1 class="Article__title">{{ title }}</h1>
+
+	<p class="Article__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+	<div class="Article__content">
+
+		<div class="Article__text">
+
+			<p class="Article__perex">{{ perex }}</p>
+
+			{{content | safe}} 
+		</div>
+
+		<img class="Article__image" src="/images/mozek.jpg" alt="Mozek">
+
+	</div>
+
+</article>
+</div>
