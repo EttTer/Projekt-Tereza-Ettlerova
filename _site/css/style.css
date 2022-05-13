@@ -420,6 +420,20 @@ button:hover {
   padding-top: 0;
 }
 
+.ThirdsectionProjekty__button a {
+  color: white;
+  text-decoration: none;
+}
+
+.SecondsectionProjekty__button a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b23444;
+}
+
 /******************O nás*************************/
 .FirstSectionOnas__title::after {
   content: "";
@@ -607,6 +621,15 @@ button:hover {
   margin-bottom: 30px;
 }
 
+.FirstsectionPartneri__button a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b23444;
+}
+
 @media screen and (min-width: 700px) {
   .FirstsectionPartneri__grid,
 .FirstsectionKontakty__grid {
@@ -694,25 +717,39 @@ button:hover {
     gap: 30px;
   }
 }
+/******************Blog*************************/
 .Firstsection__collections {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  padding-left: 15px;
-  padding-top: 0;
-}
-
-.Firstsection__collections {
-  border: 2px solid #597a90;
+  gap: 15px;
   background-color: white;
   border-radius: 3px;
-  width: 75%;
-  min-height: 300px;
+  width: 100%;
   text-align: center;
   margin: 30px auto;
-  padding-bottom: 15px;
   box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Firstsection__collections img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 2px 2px 2px rgb(173, 167, 167);
+}
+
+.Firstsection__collections__button a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b23444;
+}
+
+.Firstsection__collections__list {
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 650px) {

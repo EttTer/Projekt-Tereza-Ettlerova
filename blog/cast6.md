@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 6. část
 date: 2022-05-12T16:30
-perex: "Nenech mozek degenerovat" 5 pilířů zdravého mozku
+perex: '5 pilířů zdravého mozku'
+foto: mozek6.jpg
+alt: mozek6
 tags: blog
 ---
 Jak udržet bystrou mysl?

@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 3. část
 date: 2022-05-12T16:30
-perex: "Nenech mozek degenerovat" Dá se mozek trénovat?
+perex: 'Dá se mozek trénovat?'
+foto: mozek3.jpg
+alt: mozek3
 tags: blog
 ---
 Byli jste tento týden běhat? Plavat? V posilovně? Na kole? Běhali jste s dětmi v lese? Nebo aspoň procházka? A co jste udělali pro Váš mozek? Namítnete, že přeci pracujete mozkem celý den. Ano, ale postupně zjistíte, že to není úplně přesně to, co Vám mozek udržuje v pohotovosti, co ho optimalizuje. Panuje přesvědčení, že se dlouhodobě k mozku přistupuje příliš pasivně. A já s tím naprosto souhlasím.

@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 7. část
 date: 2022-05-12T16:30
-perex: "Nenech mozek degenerovat" Pohyb je základ!
+perex: 'Pohyb je základ!'
+foto: mozek7.jpg
+alt: mozek7
 tags: blog
 ---
 Když jste mladí, nebo dokonce hodně mladí, pak na demenci a ztrátu kognitivních funkcí nejspíš moc nemyslíte, ale měli byste.
@@ -25,8 +27,8 @@ Začít cvičit dnes, znamená přispět k ochraně svého mozku. Není pozdě!
 
 Stačí mnohem méně, než předpokládáte. Požadavky splňuje dokonce i rychlá chůze. 150 minut týdně včetně intervalového i silového tréninku, překvapovat svoje tělo, střídat intenzitu, rychlost, námahu. Na to si udělejte čas, za každé situace. Nejde o marnivost, vzhled, ale je to investice do Vás, Vašeho mozku, Vaší pohody, spokojenosti a tím i atmosféry ve Vašem okolí.
 
-*[1] Fakta a čísla o pacientech s demencí a jejich pečovatelích: Asociace pro Alzheimerovu chorobu: Dostupné z URL:  www.alz.org/media/documents/alzheimers-facts-and-figures-2019-r.pdf. [cit. 9.5.2022].
+*[1] Fakta a čísla o pacientech s demencí a jejich pečovatelích: Asociace pro Alzheimerovu chorobu: Dostupné z URL:  www.alz.org/media/documents/alzheimers-facts-and-figures-2019-r.pdf. [cit. 9.5.2022].*
 
  
 
-GUPTA, S. Bystřejší mozek, Jan Melvil Publishing, 2022.  ISBN: 978-80-7555-154-2.*
+*GUPTA, S. Bystřejší mozek, Jan Melvil Publishing, 2022.  ISBN: 978-80-7555-154-2.*

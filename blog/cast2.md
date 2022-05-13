@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 2. část
 date: 2022-05-12T16:30
-perex: "Nenech mozek degenerovat" Má větší váhu genetika nebo životní partner?
+perex: 'Má větší váhu genetika nebo životní partner?'
+foto: mozek2.jpg
+alt: mozek2
 tags: blog
 ---
 Chceme se věnovat mozku, posilování toho, co nás ve většině případů jako zdravotníky, živí.

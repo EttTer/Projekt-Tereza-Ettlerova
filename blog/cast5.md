@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 5. část
 date: 2022-05-12T16:30
-perex: "Nenech mozek degenerovat" Boříme mýty.
+perex: 'Boříme mýty.'
+foto: mozek5.jpg
+alt: mozek5
 tags: blog
 ---
 Jak svět vnímáme, kdo jsme, jací jsme, to formuje náš mozek. Přizpůsobuje nás různým prostředím, utváří vzpomínky, dává nám zkušenosti.
@@ -27,6 +29,6 @@ A zakončeme to mýtem, že muži a ženy mají odlišný mozek a tím jiné sch
 
 Všechny studie na toto téma jsou nejhůře koncipované, málo reprodukovatelné a zatížené chybami, ale obecně lze říci, že existují rozdíly a odlišnosti ve fungování mozku obou pohlaví. Neznamená to však, že by jeden byl lépe vybaven než druhý. Výzkumy v této oblasti samozřejmě pokračují. Mozek každého má své jedinečné nastavení. Jen zdůrazněme, že Alzheimerova choroba opravdu postihuje nepoměrně více žen než mužů. Proč to tak je není zcela jasně prokázáno, dokonce se uvažuje i o jistém hormonálním ovlivňování.
 
-*Maria C. Norton, Ken R. Smith, Truls Ostbye a kol.: „Greater Risk of Dementia When Spouse Has Dementia? The Cache County Study“, Journal of the American Geriatric Society 58, č. 5 (2010): s. 895–900.
+*Maria C. Norton, Ken R. Smith, Truls Ostbye a kol.: „Greater Risk of Dementia When Spouse Has Dementia? The Cache County Study“, Journal of the American Geriatric Society 58, č. 5 (2010): s. 895–900.*
 
-GUPTA, S. Bystřejší mozek, Jan Melvil Publishing, 2022.  ISBN: 978-80-7555-154-2*
+*GUPTA, S. Bystřejší mozek, Jan Melvil Publishing, 2022.  ISBN: 978-80-7555-154-2*

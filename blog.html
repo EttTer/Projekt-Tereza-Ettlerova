@@ -3,15 +3,29 @@ layout: main.njk
 title: Blog
 date: 2021-04-13T16:30
 ---
+
 <div class="FirstsectionPartneri">
-<h3 class="Firstsection__title">Blog</h3>
-<div class="Firstsection__collections">
-{% for prispevek in collections.blog %}
+  <h3 class="Firstsection__title">Blog</h3>
+  <div class="Firstsection__collections__width">
+    {% for prispevek in collections.blog %}
+    <div class="Firstsection__collections">
+      <img src="/images/{{prispevek.data.foto}}" alt="{{prispevek.data.alt}}" />
 
-<h2 class="Firstsection__collections__title">{{ prispevek.data.title }}</h2>
-<p class="Firstsection__collections__text">{{ prispevek.data.perex }}</p>
-<button class="Firstsection__collections__button"><a href="{{ prispevek.url }}">Celý článek</a></button>
+      <div class="Firstsection__collections__list">
+        <h2 class="Firstsection__collections__title">
+          {{ prispevek.data.title }}
+        </h2>
 
-{% endfor %}
-</div>
+        <p class="Firstsection__collections__text">
+          {{ prispevek.data.perex }}
+        </p>
+
+        <button class="Firstsection__collections__button">
+          <a href="{{ prispevek.url }}">Celý článek</a>
+        </button>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
 </div>

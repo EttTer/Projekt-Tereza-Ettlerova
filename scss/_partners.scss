@@ -64,10 +64,16 @@
   grid-template-columns: 1fr;
 }
 
+
 .FirstsectionPartneri__button {
   margin-bottom: space.$doublespace;
 }
-
+.FirstsectionPartneri__button a {
+  color: colors.$white;
+  text-decoration: none;
+}
+a:hover {
+  color: colors.$contrast;}
 @media screen and (min-width: 700px) {
   .FirstsectionPartneri__grid,
   .FirstsectionKontakty__grid {

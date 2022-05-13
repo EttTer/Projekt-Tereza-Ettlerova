@@ -2,7 +2,9 @@
 layout: article.njk
 title: Nenech mozek degenerovat - 4. část
 date: 2022-05-12T16:30
-perex:  "Nenech mozek degenerovat" Jak jste na tom s mozkem Vy?
+perex: 'Jak jste na tom s mozkem Vy?'
+foto: mozek4.jpg
+alt: mozek4
 tags: blog
 ---
 Už víte, že na svém mozku se vyplatí makat. Autor metody pro jeho posílení, optimalizaci, který je celosvětově uznávaný neurochirg,sestavil seznam otázek. Otázky, které se týkají zdraví a potenciálu mozku. Pokud chete někam jít, posouvat se, je nutné si momentálně ověřit, jak na tom jste. A právě tyto otázky Vám s tím pomohou
