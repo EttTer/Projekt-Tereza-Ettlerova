@@ -41,3 +41,12 @@
     padding: space.$space;
     transform: scale(1.4);
   }
+
+  .Menu__item--active {
+    background-color: colors.$secondary;
+    /*transform: scale(1.2);*/
+  }
+
+  .Menu__item--active a {
+    color:colors.$white;
+  }
